@@ -8,111 +8,247 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/testimonios.css">
 </head>
 
 <body>
+    <header class="main-header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container header-container">
+                <a class="navbar-brand logo d-flex align-items-center" href="#">
+                    <span class="font-weight-bold ml-2">Grupo 8</span>
+                </a>
 
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <h1>Hola mundo</h1>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto align-items-center nav-menu">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conocenos">Conócenos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                        <li class="nav-item mt-3 mt-lg-0 ml-lg-3">
+                            <a href="#contacto" class="nav-btn d-inline-block">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
 
-    
-<section class="tm" id="testimonios">
+        </section>
+        <section id="conocenos">
 
-    <div class="tm_container">
+        </section>
+        <section class="services-section" id="servicios">
+            <div class="container">
+                <div class="row mb-5 text-center">
+                    <div class="col-12">
+                        <h2 class="section-title">Nuestros Servicios</h2>
+                        <p class="section-subtitle">Soluciones informáticas rápidas y eficaces adaptadas a tus
+                            necesidades.</p>
+                    </div>
+                </div>
 
-        <div class="tm_header">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card text-center p-4 h-100">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon"><img src="./img/serv01.png" alt="servicio de reparación"></span>
+                            </div>
+                            <h4 class="service-title">Soporte Técnico</h4>
+                            <p class="service-desc">Diagnóstico y reparación de equipos de cómputo. Solucionamos
+                                problemas de hardware y software al instante.</p>
+                        </div>
+                    </div>
 
-            <h2 class="tm_title">
-                Lo que dicen nuestros clientes
-            </h2>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card text-center p-4 h-100">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon"><img src="./img/serv02.png" alt="servicio de mantenimiento"></span>
+                            </div>
+                            <h4 class="service-title">Mantenimiento</h4>
+                            <p class="service-desc">Mantenimiento preventivo y correctivo para optimizar el rendimiento
+                                y prolongar la vida útil de tus PCs.</p>
+                        </div>
+                    </div>
 
-            <p class="tm_subtitle">
-                Empresas y profesionales que confiaron en nosotros.
-            </p>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card text-center p-4 h-100">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon"><img src="./img/serv03.png" alt="servicio de redes y conectividad">
+                                </span>
+                            </div>
+                            <h4 class="service-title">Redes y Conectividad</h4>
+                            <p class="service-desc">Instalación, configuración y mejora de redes Wi-Fi y cableadas para
+                                hogares y pequeñas oficinas.</p>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card text-center p-4 h-100">
+                            <div class="icon-wrapper mb-4">
+                                <span class="icon"><img src="./img/serv04.png" alt="servicio de seguridad y respaldo"></span>
+                            </div>
+                            <h4 class="service-title">Seguridad y Respaldo</h4>
+                            <p class="service-desc">Limpieza de virus, instalación de antivirus y recuperación/respaldo
+                                de datos importantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+
+        </section>
+        <section class="tm" id="testimonios">
+
+            <div class="tm_container">
+
+                <div class="tm_header">
+
+                    <h2 class="tm_title">
+                        Lo que dicen nuestros clientes
+                    </h2>
+
+                    <p class="tm_subtitle">
+                        Empresas y profesionales que confiaron en nosotros.
+                    </p>
+
+                </div>
+
+                <div class="tm_cards">
+
+                    <article class="tm_card">
+
+                        <img src="img/cliente1.jpg" alt="Juan Pérez" class="tm_avatar">
+
+                        <h3 class="tm_name">
+                            Juan Pérez
+                        </h3>
+
+                        <span class="tm_role">
+                            Gerente General
+                        </span>
+
+                        <div class="tm_stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="tm_text">
+                            Excelente atención. Solucionaron nuestros problemas en tiempo récord.
+                        </p>
+
+                    </article>
+
+                    <article class="tm_card">
+
+                        <img src="img/cliente2.jpg" alt="María Gómez" class="tm_avatar">
+
+                        <h3 class="tm_name">
+                            María Gómez
+                        </h3>
+
+                        <span class="tm_role">
+                            Emprendedora
+                        </span>
+
+                        <div class="tm_stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="tm_text">
+                            Muy profesionales y siempre atentos a nuestras necesidades.
+                        </p>
+
+                    </article>
+
+                    <article class="tm_card">
+
+                        <img src="img/cliente3.jpg" alt="Carlos Ruiz" class="tm_avatar">
+
+                        <h3 class="tm_name">
+                            Carlos Ruiz
+                        </h3>
+
+                        <span class="tm_role">
+                            CEO
+                        </span>
+
+                        <div class="tm_stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="tm_text">
+                            Recomiendo totalmente sus servicios tecnológicos.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="contacto">
+
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 footer-brand">
+                    <h4 class="footer-title">Grupo 8</h4>
+                    <p class="footer-text">Brindamos soluciones informáticas de vanguardia para escalar tu negocio al
+                        siguiente nivel digital.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><img src="./img/linkedin.png" alt="linkedin"></a>
+                        <a href="#" class="social-icon"><img src="./img/facebook.png" alt="facebook"></a>
+                        <a href="#" class="social-icon"><img src="./img/instagram.png" alt="instagram"></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 footer-links">
+                    <h5 class="footer-subtitle">Explorar</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#conocenos">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portfolio">Proyectos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-links">
+                    <h5 class="footer-subtitle">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Soporte Técnico</a></li>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Ciberseguridad</a></li>
+                        <li><a href="#">Consultoría TI</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h5 class="footer-subtitle">Contacto</h5>
+                    <ul class="list-unstyled footer-text">
+                        <li>📞 +51 +++ +++ +++</li>
+                        <li>✉️ info@grupo8.com</li>
+                        <li>📍 Lima, Perú</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2026 Grupo 08. Todos los derechos reservados.</p>
+            </div>
         </div>
-
-        <div class="tm_cards">
-
-            <article class="tm_card">
-
-                <img src="img/cliente1.jpg"
-                    alt="Juan Pérez"
-                    class="tm_avatar">
-
-                <h3 class="tm_name">
-                    Juan Pérez
-                </h3>
-
-                <span class="tm_role">
-                    Gerente General
-                </span>
-
-                <div class="tm_stars">
-                    ★★★★★
-                </div>
-
-                <p class="tm_text">
-                    Excelente atención. Solucionaron nuestros problemas en tiempo récord.
-                </p>
-
-            </article>
-
-            <article class="tm_card">
-
-                <img src="img/cliente2.jpg"
-                    alt="María Gómez"
-                    class="tm_avatar">
-
-                <h3 class="tm_name">
-                    María Gómez
-                </h3>
-
-                <span class="tm_role">
-                    Emprendedora
-                </span>
-
-                <div class="tm_stars">
-                    ★★★★★
-                </div>
-
-                <p class="tm_text">
-                    Muy profesionales y siempre atentos a nuestras necesidades.
-                </p>
-
-            </article>
-
-            <article class="tm_card">
-
-                <img src="img/cliente3.jpg"
-                    alt="Carlos Ruiz"
-                    class="tm_avatar">
-
-                <h3 class="tm_name">
-                    Carlos Ruiz
-                </h3>
-
-                <span class="tm_role">
-                    CEO
-                </span>
-
-                <div class="tm_stars">
-                    ★★★★★
-                </div>
-
-                <p class="tm_text">
-                    Recomiendo totalmente sus servicios tecnológicos.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
