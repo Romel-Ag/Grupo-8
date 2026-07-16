@@ -1,179 +1,108 @@
-.ct{
+@import "variables";
 
+.ct {
     padding: 80px 20px;
-
-    background: #f5f7fb;
-
+    background: $color-background;
 }
 
-.ct_container{
-
+.ct_container {
     max-width: 1200px;
-
     margin: auto;
-
 }
 
-.ct_header{
-
+.ct_header {
     text-align: center;
-
     margin-bottom: 50px;
-
 }
 
-.ct_title{
-
+.ct_title {
     font-size: 2.3rem;
-
     font-weight: bold;
-
-    color: #222;
-
+    color: $color-secondary;
 }
 
-.ct_subtitle{
-
-    color: #666;
-
+.ct_subtitle {
+    color: $color-text-muted;
     margin-top: 10px;
-
 }
 
-.ct_content{
-
+.ct_content {
     display: grid;
-
     grid-template-columns: 1fr 2fr;
-
     gap: 40px;
-
 }
 
-.ct_info{
-
+.ct_info {
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
-
 }
 
-.ct_item{
-
-    background: white;
-
+.ct_item {
+    background: $color-surface;
     padding: 20px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
-
+    border-radius: $radius-md;
+    box-shadow: $shadow-sm;
 }
 
-.ct_item h3{
-
+.ct_item h3 {
     font-size: 18px;
-
-    color: #0056b3;
-
+    color: $color-primary;
     margin-bottom: 10px;
-
 }
 
-.ct_item p{
-
-    color: #555;
-
+.ct_item p {
+    color: $color-text;
     margin: 0;
-
 }
 
-.ct_form{
-
+.ct_form {
     display: flex;
-
     flex-direction: column;
-
     gap: 18px;
-
-    background: white;
-
+    background: $color-surface;
     padding: 30px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
-
+    border-radius: $radius-md;
+    box-shadow: $shadow-sm;
 }
 
 .ct_form input,
-
-.ct_form textarea{
-
+.ct_form textarea {
     width: 100%;
-
     padding: 14px;
-
-    border: 1px solid #dcdcdc;
-
-    border-radius: 8px;
-
+    border: 1px solid $color-border;
+    border-radius: $radius-sm;
     outline: none;
-
-    transition: .3s;
-
+    transition: $transition-normal;
 }
 
-.ct_form textarea{
-
+.ct_form textarea {
     min-height: 150px;
-
     resize: none;
-
 }
 
 .ct_form input:focus,
-
-.ct_form textarea:focus{
-
-    border-color: #007bff;
-
+.ct_form textarea:focus {
+    border-color: $color-primary;
 }
 
-.ct_form button{
-
-    background: #007bff;
-
-    color: white;
-
+.ct_form button {
+    background: $color-primary;
+    color: $color-white;
     border: none;
-
     padding: 14px;
-
-    border-radius: 8px;
-
+    border-radius: $radius-sm;
     cursor: pointer;
-
-    transition: .3s;
-
+    transition: $transition-normal;
     font-weight: bold;
-
 }
 
-.ct_form button:hover{
-
-    background: #0056b3;
-
+.ct_form button:hover {
+    background: $color-primary-dark;
 }
 
-@media(max-width:768px){
-
-    .ct_content{
-
-        grid-template-columns:1fr;
-
+@media (max-width: 768px) {
+    .ct_content {
+        grid-template-columns: 1fr;
     }
-
 }
