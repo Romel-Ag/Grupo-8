@@ -1,28 +1,16 @@
 
-/*======VARIABLES==================*/
-
-$tm-primary: #0f4c81;
-$tm-text: #444;
-$tm-text-light: #777;
-$tm-background: #f5f7fa;
-$tm-white: #ffffff;
-
-$tm-radius: 15px;
-$tm-shadow: 0 8px 20px rgba(0,0,0,.12);
-$tm-transition: .35s ease;
-
-
+@import "variables";
 
 /*========MIXINS============*/
 
 @mixin tm-card {
-    background: $tm-white;
-    border-radius: $tm-radius;
-    box-shadow: $tm-shadow;
+    background: $color-surface;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
 }
 
 @mixin tm-mobile {
-    @media(max-width:768px){
+    @media (max-width: 768px) {
         @content;
     }
 }
@@ -30,7 +18,7 @@ $tm-transition: .35s ease;
 /*=======SECCION TESTIMONIOS============*/
 
 .tm {
-    background: $tm-background;
+    background: $color-background;
     padding: 80px 20px;
 
     &_container {
@@ -45,13 +33,13 @@ $tm-transition: .35s ease;
 
 
     &_title {
-        color: $tm-primary;
+        color: $color-primary;
         font-size: 2.3rem;
         margin-bottom: 10px;
     }
 
     &_subtitle {
-        color: $tm-text-light;
+        color: $color-text-light;
         font-size: 1rem;
     }
 
@@ -69,7 +57,7 @@ $tm-transition: .35s ease;
         @include tm-card;
         padding: 35px;
         text-align: center;
-        transition: $tm-transition;
+        transition: $transition-normal;
         animation: tm-aparecer .8s ease both;
 
         &:hover {
@@ -99,7 +87,7 @@ $tm-transition: .35s ease;
         border-radius: 50%;
         object-fit: cover;
         margin-bottom: 20px;
-        transition: $tm-transition;
+        transition: $transition-normal;
 
         &:hover {
             transform: scale(1.1);
@@ -108,24 +96,24 @@ $tm-transition: .35s ease;
     }
 
     &_name {
-        color: $tm-primary;
+        color: $color-primary;
         margin-bottom: 5px;
     }
 
     &_role {
-        color: $tm-text-light;
+        color: $color-text-light;
         font-size: .9rem;
     }
 
     &_stars {
         margin: 15px 0;
-        color: #FFD700;
+        color: $color-warning;
         font-size: 1.2rem;
         animation: tm-brillo 2s infinite;
     }
 
     &_text {
-        color: $tm-text;
+        color: $color-text;
         line-height: 1.6;
     }
 

@@ -1,0 +1,62 @@
+/* PALETA DE COLORES ESTANDARIZADA */
+
+$color-primary: #0d6efd;
+$color-primary-dark: #0b1d33;
+$color-secondary: #0b1d33;
+$color-accent: #00f2fe;
+
+$color-success: #22c55e;
+$color-warning: #f59e0b;
+$color-danger: #ef4444;
+
+$color-white: #ffffff;
+$color-background: #f8f9fa;
+$color-surface: #ffffff;
+$color-border: #e2e8f0;
+
+$color-text: #334155;
+$color-text-muted: #6c757d;
+$color-text-light: #64748b;
+
+/* TYPOGRAPHY */
+
+$font-family: "Poppins", sans-serif;
+
+$fs-title: 2.8rem;
+$fs-subtitle: 1.25rem;
+$fs-text: 1rem;
+$fs-small: 0.9rem;
+
+/* SPACING */
+
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 4rem;
+
+/* BORDER RADIUS */
+
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 18px;
+$radius-xl: 24px;
+
+/* SHADOWS */
+
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+$shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.12);
+
+/* TRANSITIONS */
+
+$transition-fast: 0.2s ease;
+$transition-normal: 0.35s ease;
+$transition-slow: 0.5s ease;
+
+/* BREAKPOINTS */
+
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;

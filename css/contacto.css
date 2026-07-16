@@ -1,6 +1,13 @@
+/* PALETA DE COLORES ESTANDARIZADA */
+/* TYPOGRAPHY */
+/* SPACING */
+/* BORDER RADIUS */
+/* SHADOWS */
+/* TRANSITIONS */
+/* BREAKPOINTS */
 .ct {
   padding: 80px 20px;
-  background: #f5f7fb;
+  background: #f8f9fa;
 }
 
 .ct_container {
@@ -16,11 +23,11 @@
 .ct_title {
   font-size: 2.3rem;
   font-weight: bold;
-  color: #222;
+  color: #0b1d33;
 }
 
 .ct_subtitle {
-  color: #666;
+  color: #6c757d;
   margin-top: 10px;
 }
 
@@ -37,20 +44,20 @@
 }
 
 .ct_item {
-  background: white;
+  background: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .ct_item h3 {
   font-size: 18px;
-  color: #0056b3;
+  color: #0d6efd;
   margin-bottom: 10px;
 }
 
 .ct_item p {
-  color: #555;
+  color: #334155;
   margin: 0;
 }
 
@@ -58,20 +65,20 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  background: white;
+  background: #ffffff;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .ct_form input,
 .ct_form textarea {
   width: 100%;
   padding: 14px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
   outline: none;
-  transition: 0.3s;
+  transition: 0.35s ease;
 }
 
 .ct_form textarea {
@@ -81,22 +88,22 @@
 
 .ct_form input:focus,
 .ct_form textarea:focus {
-  border-color: #007bff;
+  border-color: #0d6efd;
 }
 
 .ct_form button {
-  background: #007bff;
-  color: white;
+  background: #0d6efd;
+  color: #ffffff;
   border: none;
   padding: 14px;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.35s ease;
   font-weight: bold;
 }
 
 .ct_form button:hover {
-  background: #0056b3;
+  background: #0b1d33;
 }
 
 @media (max-width: 768px) {
@@ -104,5 +111,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-/*# sourceMappingURL=contacto.css.map */
