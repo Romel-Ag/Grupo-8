@@ -10,12 +10,12 @@ Se desarrolló un landing page en un entorno vanilla utilizando HTML, Bootstrap,
 
 ## Evidencia de interfaz
 - Captura 1: landing page completa.
-![alt text](image-3.png)
-![alt text](image.png)
+![alt text](./evidencia/image-3.png)
+![alt text](./evidencia/image.png)
 - Captura 2: vista responsiva.
-![alt text](image-1.png)
+![alt text](./evidencia/image-1.png)
 - Captura 3: formulario o navbar en vista móvil.
-![alt text](image-2.png)
+![alt text](./evidencia/image-2.png)
 
 ## Tecnologías utilizadas
 - Bootstrap: para la estructura y componentes responsivos.
