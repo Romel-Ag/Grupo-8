@@ -1,0 +1,174 @@
+
+/*====VARIABLES============*/
+
+$ventajas-primary: #0f4c81;
+$ventajas-secondary: #1e88e5;
+$ventajas-background: #f5f7fa;
+$ventajas-white: #ffffff;
+$ventajas-text: #444;
+$ventajas-text-light: #777;
+
+$ventajas-radius: 16px;
+$ventajas-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+$ventajas-transition: .35s ease;
+
+
+/*===MIXINS==========*/
+
+@mixin ventajas_card {
+    background: $ventajas-white;
+    border-radius: $ventajas-radius;
+    box-shadow: $ventajas-shadow;
+}
+
+
+@mixin ventajas_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*====SECCIÓN=================*/
+
+.ventajas {
+    padding: 90px 20px;
+    background: $ventajas-background;
+    &_container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &_header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &_title {
+        font-size: 2.3rem;
+        color: $ventajas-primary;
+        margin-bottom: 15px;
+    }
+
+    &_subtitle {
+        max-width: 700px;
+        margin: auto;
+        color: $ventajas-text-light;
+        line-height: 1.7;
+    }
+
+    &_cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &_card {
+        @include ventajas_card;
+        padding: 35px 25px;
+        text-align: center;
+        transition: $ventajas-transition;
+        border-top: 4px solid transparent;
+        animation: ventajas_fadeUp .8s ease both;
+        &:hover {
+            transform: translateY(-10px);
+            border-top-color: $ventajas-primary;
+        }
+
+        &:hover .ventajas_icon {
+            transform: rotate(12deg) scale(1.15);
+            background: $ventajas-primary;
+            color: $ventajas-white;
+        }
+
+        &:nth-child(1) {
+            animation-delay: .15s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: .30s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: .45s;
+        }
+
+        &:nth-child(4) {
+            animation-delay: .60s;
+        }
+    }
+
+    &_icon {
+        @include ventajas_center;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 25px;
+        border-radius: 50%;
+        background: rgba(15, 76, 129, .1);
+        color: $ventajas-primary;
+        font-size: 2rem;
+        transition: $ventajas-transition;
+    }
+
+    &_name {
+        color: $ventajas-primary;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+
+    &_text {
+        color: $ventajas-text;
+        line-height: 1.7;
+    }
+}
+
+
+/*==========ANIMACIONES===========*/
+@keyframes ventajas_fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*===TABLET=============*/
+
+@media(max-width:992px) {
+    .ventajas {
+        &_cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+/*====MÓVIL=====*/
+@media(max-width:768px) {
+
+    .ventajas {
+        padding: 60px 15px;
+        &_title {
+            font-size: 1.8rem;
+        }
+        
+        &_cards {
+            grid-template-columns: 1fr;
+        }
+
+        &_card {
+            padding: 30px 20px;
+        }
+
+        &_icon {
+            width: 70px;
+            height: 70px;
+            font-size: 1.8rem;
+        }
+    }
+}

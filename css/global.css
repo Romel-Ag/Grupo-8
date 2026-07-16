@@ -174,7 +174,8 @@ body {
 .services-section .service-card .icon-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .services-section .service-card .service-title {
   color: #0b1d33;
@@ -261,7 +262,8 @@ body {
 .main-footer .social-links .social-icon img {
   width: 60%;
   height: 60%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-footer .social-links .social-icon:hover {
   background-color: #0d6efd;
