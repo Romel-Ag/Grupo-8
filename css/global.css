@@ -174,7 +174,8 @@ body {
 .services-section .service-card .icon-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .services-section .service-card .service-title {
   color: #0F172A;
@@ -261,7 +262,8 @@ body {
 .main-footer .social-links .social-icon img {
   width: 60%;
   height: 60%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-footer .social-links .social-icon:hover {
   background-color: #2563EB;
@@ -279,216 +281,6 @@ body {
 
 /*Section Inicio*/
 /*Section Conocenos*/
-:root {
-    --primary-color: #0d6efd;
-    --secondary-color: #0b1d33;
-    --accent-color: #00f2fe;
-    --text-muted: #6c757d;
-    --bg-light: #f8f9fa;
-    --white: #ffffff;
-}
-
-.hero-section {
-    padding: 120px 0 80px 0;
-    min-height: 85vh;
-    background: radial-gradient(circle at 10% 20%, rgb(11, 29, 51) 0%, rgb(18, 48, 85) 90%);
-    color: var(--white);
-    overflow: hidden;
-}
-
-.hero-tagline {
-    color: var(--accent-color);
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.hero-title {
-    font-size: 4rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    background: linear-gradient(45deg, #ffffff, var(--accent-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-description {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: #d1d8e0;
-    margin-bottom: 35px;
-}
-
-.btn-custom {
-    background: linear-gradient(45deg, var(--primary-color), #00c6ff);
-    color: var(--white);
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 50px;
-    border: none;
-    transition: all 0.3s ease;
-    display: inline-block;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
-}
-
-.btn-custom:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.6);
-    color: var(--white);
-    text-decoration: none;
-}
-
-.btn-custom-outline {
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    color: var(--white);
-    padding: 11px 30px;
-    font-weight: 600;
-    border-radius: 50px;
-    background: transparent;
-    transition: all 0.3s ease;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.btn-custom-outline:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--white);
-    color: var(--white);
-    text-decoration: none;
-}
-
-.hero-image {
-    animation: efectoFlotar 6s ease-in-out infinite;
-}
-
-@keyframes efectoFlotar {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-}
-
-.about-section {
-    padding: 100px 0;
-    background-color: var(--white);
-    color: var(--secondary-color);
-}
-
-.about-img-container {
-    position: relative;
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
-
-.about-img-container img {
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.about-experience-badge {
-    position: absolute;
-    bottom: 30px;
-    left: -20px;
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 20px 25px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
-    text-align: center;
-    z-index: 2;
-}
-
-.about-experience-badge .number {
-    font-size: 2rem;
-    font-weight: 800;
-    display: block;
-    line-height: 1;
-}
-
-.about-experience-badge .text {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.about-subtitle {
-    color: var(--primary-color);
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.about-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 25px;
-    line-height: 1.2;
-}
-
-.about-text {
-    font-size: 1.05rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-}
-
-.value-item h5 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--secondary-color);
-    margin-bottom: 8px;
-}
-
-.value-item p {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-}
-
-.why-choose-us {
-    background-color: var(--bg-light);
-    border-left: 4px solid var(--primary-color);
-}
-
-.why-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.why-list {
-    list-style-type: none;
-}
-
-.why-list li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    color: var(--text-muted);
-}
-
-.why-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
 /*Section Portfolio*/
 /*Section Testimonios*/
-/*Section Contacto*/
-
-/*# sourceMappingURL=global.css.map */
+/*Section Contacto*//*# sourceMappingURL=global.css.map */
